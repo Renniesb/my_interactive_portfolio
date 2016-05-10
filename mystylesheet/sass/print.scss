@@ -1,0 +1,51 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+
+@import "partials/base";
+
+
+
+body {
+	background-color: $body-color;
+}
+
+h1 {
+
+	color: $hcolor;
+	text-align: center;
+	font: bold 15px arial, sans-serif;
+	text-decoration: underline;
+
+	&:hover {
+
+	color: $hhovercolor;
+
+	}
+
+}
+
+p {
+	text-align: center;
+
+		&:hover {
+			color: $pcolor;
+		}
+}
+
+.container {
+	background: $card-background;
+	height: 100%;
+
+}
+
+.card {
+	background: $card-color;
+	margin-top: 20px;
+	padding: 20px;
+	border-color: $outline-color;
+
+}
+
+
+

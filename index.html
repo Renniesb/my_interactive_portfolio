@@ -1,0 +1,52 @@
+<!doctype>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Best Web Design, Affordable price</title>
+	<meta name="description" content="Rennie Bevineau is a Web Developer living in Colorado who specializes in HTML, CSS and Javascript web page development">
+	<meta name="author" content="Rennie Bevineau">
+	<link rel="stylesheet" href="http://www.atlasestateagents.co.uk/css/tether.min.css">
+	<link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+	 <link rel="stylesheet" href="mystylesheet\stylesheets\print.css">
+
+	<!-- Libraries -->
+    <script src="node_modules/es6-shim/es6-shim.js"></script>
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.2/js/tether.min.js"></script>
+    <script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
+
+
+</head>
+<body>
+    <script>
+      System.config({
+        packages: {
+          app: {
+            format: 'register',
+            defaultExtension: 'js'
+          }
+        }
+      });
+      System.import('app.js')
+            .then(null, console.error.bind(console));
+    </script>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-9 col-sm-offset-1 card">
+			  <img src="http://placehold.it/350x150" class="card-img-top pull-xs-left" data-src="..." alt="Card image cap">
+				  <div class="card-block  text-xs-center">
+					<h4 class="card-title">Card title</h4>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. <div class="aftercontent" >This is alot of text. It adds length to the paragraph. It adds bulk. I had to do it. It was very necessary for this example</div></p><a class="readmore">Read More</a>
+					<a href="#" class="btn btn-primary">Button</a>
+				  </div>
+			</div>
+		</div>
+		<projects></projects><!-- app loads here! -->
+	</div><!-- End of container -->
+
+</body>
+</html>
