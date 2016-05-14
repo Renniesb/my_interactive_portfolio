@@ -10,8 +10,9 @@
 	 <link rel="stylesheet" href="mystylesheet\stylesheets\print.css">
 
 	<!-- Libraries -->
-    <script src="node_modules/es6-shim/es6-shim.js"></script>
+
     <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/es6-shim/es6-shim.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
     <script src="node_modules/rxjs/bundles/Rx.js"></script>
     <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
@@ -40,13 +41,52 @@
 			  <img src="http://placehold.it/350x150" class="card-img-top pull-xs-left" data-src="..." alt="Card image cap">
 				  <div class="card-block  text-xs-center">
 					<h4 class="card-title">Card title</h4>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. <div class="aftercontent" >This is alot of text. It adds length to the paragraph. It adds bulk. I had to do it. It was very necessary for this example</div></p><a class="readmore">Read More</a>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. This is alot of text. It adds length to the paragraph. It adds bulk. I had to do it. It was very necessary for this example</p>
 					<a href="#" class="btn btn-primary">Button</a>
 				  </div>
 			</div>
 		</div>
 		<projects></projects><!-- app loads here! -->
 	</div><!-- End of container -->
+
+	<script>
+		$(document).ready(function() {
+		    // Configure/customize these variables.
+		    var showChar = 100;  // How many characters are shown by default
+		    var ellipsestext = "...";
+		    var moretext = "Show more >";
+		    var lesstext = "Show less";
+
+
+		    $('.card-text').each(function() {
+		        var content = $(this).html();
+
+		        if(content.length > showChar) {
+
+		            var c = content.substr(0, showChar);
+		            var h = content.substr(showChar, content.length - showChar);
+
+		            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+
+		            $(this).html(html);
+		        }
+
+		    });
+
+		    $(".morelink").click(function(){
+		        if($(this).hasClass("less")) {
+		            $(this).removeClass("less");
+		            $(this).html(moretext);
+		        } else {
+		            $(this).addClass("less");
+		            $(this).html(lesstext);
+		        }
+		        $(this).parent().prev().toggle();
+		        $(this).prev().toggle();
+		        return false;
+		    });
+		});
+	</script>
 
 </body>
 </html>

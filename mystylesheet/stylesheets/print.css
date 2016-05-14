@@ -40,3 +40,13 @@ p:hover {
   padding: 20px;
   border-color: #cccccc;
 }
+.morecontent span {
+  display: none;
+
+}
+
+.morelink {
+  display: block;
+}
+
+
