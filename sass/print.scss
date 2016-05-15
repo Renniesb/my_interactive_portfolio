@@ -13,7 +13,6 @@ body {
 h1 {
 
 	color: $hcolor;
-	text-align: center;
 	font: bold 15px arial, sans-serif;
 	text-decoration: underline;
 
@@ -47,5 +46,21 @@ p {
 
 }
 
+.morecontent span {
+  display: none;
 
+}
+
+.morelink {
+  display: block;
+}
+
+.owl-prev {
+	display: inline;
+	padding-right: 4px;
+}
+
+.owl-next {
+	display: inline;
+}
 

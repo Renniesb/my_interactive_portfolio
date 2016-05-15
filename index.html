@@ -42,7 +42,7 @@
 	<div class="container">
 
 		<div class="row">
-			<div class="col-xs-12">
+			<div class="col-xs-12 col-xs-offset-6">
 				<div class="owl-carousel">
 				  <div> <h1>Project 1</h1> </div>
 				  <div> <h1>Project 2</h1> </div>
@@ -110,6 +110,9 @@
 			//start the owl carousel
   			$('.owl-carousel').owlCarousel({
 			    loop:true,
+			    autoplay:true,
+			    nav:true,
+			    center:true,
 			    margin:10,
 			    responsiveClass:true,
 			    responsive:{
@@ -119,7 +122,7 @@
 			        },
 			        600:{
 			            items:1,
-			            nav:false
+			            nav:true
 			        },
 			        1000:{
 			            items:1,
