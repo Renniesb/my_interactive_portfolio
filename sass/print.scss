@@ -8,12 +8,13 @@
 
 body {
 	background-color: $body-color;
+	font-size: $base-font-size;
 }
 
 h1 {
 
 	color: $hcolor;
-	font: bold 15px arial, sans-serif;
+	font: bold 2em arial, sans-serif;
 	text-decoration: underline;
 
 	&:hover {
@@ -22,6 +23,10 @@ h1 {
 
 	}
 
+}
+
+h2 {
+	font: 1.5em arial, sans-serif;
 }
 
 p {
@@ -64,3 +69,13 @@ p {
 	display: inline;
 }
 
+@media screen and (max-width: 768px) {
+	h1 {
+
+		font-size: 1.5em;
+	}
+	h2 {
+		font-size: 1.2em;
+	}
+
+}

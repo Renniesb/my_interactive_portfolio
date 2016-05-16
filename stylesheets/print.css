@@ -4,35 +4,41 @@
 /* line 9, ../sass/print.scss */
 body {
   background-color: #fafafa;
+  font-size: 16px;
 }
 
-/* line 13, ../sass/print.scss */
+/* line 14, ../sass/print.scss */
 h1 {
-  color: green;
-  font: bold 15px arial, sans-serif;
+  color: blue;
+  font: bold 2em arial, sans-serif;
   text-decoration: underline;
 }
-/* line 19, ../sass/print.scss */
+/* line 20, ../sass/print.scss */
 h1:hover {
-  color: blue;
+  color: green;
 }
 
-/* line 27, ../sass/print.scss */
+/* line 28, ../sass/print.scss */
+h2 {
+  font: 1.5em arial, sans-serif;
+}
+
+/* line 32, ../sass/print.scss */
 p {
   text-align: center;
 }
-/* line 30, ../sass/print.scss */
+/* line 35, ../sass/print.scss */
 p:hover {
   color: gray;
 }
 
-/* line 35, ../sass/print.scss */
+/* line 40, ../sass/print.scss */
 .container {
   background: #f1f1f1;
   height: 100%;
 }
 
-/* line 41, ../sass/print.scss */
+/* line 46, ../sass/print.scss */
 .card {
   background: #fff;
   margin-top: 20px;
@@ -40,23 +46,35 @@ p:hover {
   border-color: #cccccc;
 }
 
-/* line 49, ../sass/print.scss */
+/* line 54, ../sass/print.scss */
 .morecontent span {
   display: none;
 }
 
-/* line 54, ../sass/print.scss */
+/* line 59, ../sass/print.scss */
 .morelink {
   display: block;
 }
 
-/* line 58, ../sass/print.scss */
+/* line 63, ../sass/print.scss */
 .owl-prev {
   display: inline;
   padding-right: 4px;
 }
 
-/* line 63, ../sass/print.scss */
+/* line 68, ../sass/print.scss */
 .owl-next {
   display: inline;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 73, ../sass/print.scss */
+  h1 {
+    font-size: 1.5em;
+  }
+
+  /* line 77, ../sass/print.scss */
+  h2 {
+    font-size: 1.2em;
+  }
 }

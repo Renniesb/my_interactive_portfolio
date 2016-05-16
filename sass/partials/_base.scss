@@ -6,7 +6,7 @@ $bold: 600;
 // Base Font
 $base-font-family: sans-serif;
 $base-font-weight: $regular;
-$base-font-size: 13px;
+$base-font-size: 16px;
 $base-line-height: 1.4;
 
 // Fixed Font
@@ -15,6 +15,8 @@ $fixed-font-size: 85%;
 $fixed-line-height: $base-line-height;
 
 // Headings
+$h1size: 2em;
+$h2size: 1.5em;
 $header-font-weight: $bold;
 
 @import "modules/all";
