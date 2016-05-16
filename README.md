@@ -21,6 +21,8 @@ A complete portfolio redesign using the most up to date and cutting edge version
 
 - [Angular 2 Quickstart](https://angular.io/docs/ts/latest/quickstart.html)
 
+- [Add/Remove/Change classes based on screen width](http://www.javascriptkit.com/dhtmltutors/cssmediaqueries4.shtml)
+
 
 
 
