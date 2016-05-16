@@ -23,6 +23,8 @@ A complete portfolio redesign using the most up to date and cutting edge version
 
 - [Add/Remove/Change classes based on screen width](http://www.javascriptkit.com/dhtmltutors/cssmediaqueries4.shtml)
 
+- [Owl API Classes](http://www.owlcarousel.owlgraphic.com/docs/api-classes.html)
+
 
 
 
