@@ -35,6 +35,9 @@ p:hover {
 
 .container:nth-child(n+1) {
   background: #f1f1f1;
+  border-left: solid;
+  border-top: solid 2.5px;
+  border-color: #cccccc;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -57,9 +60,6 @@ p:hover {
   margin-top: 20px;
   padding: 20px;
   border-color: #cccccc;
-  float: left;
-  width: 33.333%;
-  padding: .75rem;
   margin-bottom: 2rem;
 }
 
@@ -123,6 +123,7 @@ p:hover {
 }
 
 .jumbotron .container {
+  border: none;
 
   background: hsla(72, 45%, 2%, 0.65);
   -webkit-box-shadow: #B3B3B3 10px 10px 10px;

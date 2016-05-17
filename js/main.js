@@ -63,24 +63,5 @@ var portfolio = {
 			        }
 			    }
 			})
-	},
-	//manages adding and removing layout classes
-	media: function () {
-
-
-		function mediaqueryresponse(mql){
-			var pleft= $('.pull-xs-left');
-			 if (mql.matches && pleft){ // if media query matches
-			  $('img.card-img-top.pull-xs-left').removeClass('pull-xs-left');
-			 }
-			 else if (!mql.matches && pleft.length === 0){
-			 	$('img.card-img-top').addClass('pull-xs-left');
-			 }
-		}
-
-		var mql = window.matchMedia("screen and (max-width: 991px)")
-		mediaqueryresponse(mql) // call listener function explicitly at run time
-		mql.addListener(mediaqueryresponse) // attach listener function to listen in on state changes
 	}
-
 }
