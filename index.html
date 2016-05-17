@@ -23,6 +23,7 @@
 	<script src="js/owl.carousel.js"></script>
 
 
+
 </head>
 <body>
     <script>
@@ -38,10 +39,19 @@
             .then(null, console.error.bind(console));
     </script>
 
-
-	<div class="container">
-
-		<div class="row">
+    <section class="hero jumbotron text-xs-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">Featured Work Explorer</h1>
+        <p class="lead">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+        <p>
+          <a href="#" class="btn btn-primary">Main call to action</a>
+          <a href="#" class="btn btn-secondary">Secondary action</a>
+        </p>
+      </div>
+	</section>
+		<projects></projects><!-- app loads here! -->
+	<!-- End of container -->
+	<div class="row">
 			<div class="col-xs-12 col-xs-offset-5">
 				<div class="owl-carousel">
 				  <div> <h1>Project 1</h1> </div>
@@ -54,9 +64,6 @@
 				</div>
 			</div>
 		</div>
-
-		<projects></projects><!-- app loads here! -->
-	</div><!-- End of container -->
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/initialize.js"></script>
 </body>

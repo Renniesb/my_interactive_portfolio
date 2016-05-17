@@ -32,14 +32,15 @@ System.register(['angular2/platform/browser', 'angular2/core'], function(exports
             ProjectApp = (function () {
                 function ProjectApp() {
                     this.projects = [
-                        new Project('Project 1', 'www.renniewebcreations.com')
+                        new Project('Project 1', 'www.renniewebcreations.com'),
+                        new Project('Project 2', 'www.google.com')
                     ];
                 }
                 ProjectApp = __decorate([
                     core_1.Component({
                         selector: 'projects',
                         host: { class: 'row' },
-                        template: "\n\n\t<div class=\"row\" *ngFor=\"let project of projects\" >\n\t\t\t<div class=\"col-sm-9 col-sm-offset-1 card\">\n\t\t\t  <img src=\"http://placehold.it/350x150\" class=\"card-img-top pull-xs-left\" data-src=\"...\" alt=\"Card image cap\">\n\t\t\t\t  <div class=\"card-block  text-xs-center\">\n\t\t\t\t\t<h4 class=\"card-title\">Project Name: {{project.title}} </h4>\n\t\t\t\t\t<p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card's content. This is alot of text. It adds length to the paragraph. It adds bulk. I had to do it. It was very necessary for this example</p>\n\t\t\t\t\t<a href=\"{{project.link}}\" class=\"btn btn-primary\">See live site</a>\n\t\t\t\t  </div>\n\t\t\t</div>\n\t\t</div>\n\t"
+                        template: "\n\n\t<div *ngFor=\"let project of projects\" class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-sm-9 col-sm-offset-1 card\">\n\t\t\t  <img src=\"http://placehold.it/350x150\" class=\"card-img-top pull-xs-left\" data-src=\"...\" alt=\"Card image cap\">\n\t\t\t\t  <div class=\"card-block  text-xs-center\">\n\t\t\t\t\t<h4 class=\"card-title\">Project Name: {{project.title}} </h4>\n\t\t\t\t\t<p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card's content. This is alot of text. It adds length to the paragraph. It adds bulk. I had to do it. It was very necessary for this example</p>\n\t\t\t\t\t<a href=\"{{project.link}}\" class=\"btn btn-primary\">See live site</a>\n\t\t\t\t  </div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], ProjectApp);

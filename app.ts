@@ -19,7 +19,8 @@ class Project {
 	host: {class: 'row'},
 	template: `
 
-	<div class="row" *ngFor="let project of projects" >
+	<div *ngFor="let project of projects" class="container">
+		<div class="row">
 			<div class="col-sm-9 col-sm-offset-1 card">
 			  <img src="http://placehold.it/350x150" class="card-img-top pull-xs-left" data-src="..." alt="Card image cap">
 				  <div class="card-block  text-xs-center">
@@ -29,6 +30,7 @@ class Project {
 				  </div>
 			</div>
 		</div>
+	</div>
 	`
 })
 
@@ -36,7 +38,8 @@ class ProjectApp {
 	projects: Project[];
 	constructor(){
 		this.projects = [
-			new Project('Project 1','www.renniewebcreations.com')
+			new Project('Project 1','www.renniewebcreations.com'),
+			new Project('Project 2','www.google.com')
 		];
 	}
 }
