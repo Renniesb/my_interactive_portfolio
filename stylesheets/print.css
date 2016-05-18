@@ -42,6 +42,7 @@ p:hover {
   -moz-border-radius: 10px;
   border-radius: 10px;
   margin-bottom: 40px;
+  padding-bottom: 15px;
   -webkit-box-shadow: #B3B3B3 10px 10px 10px;
   -moz-box-shadow: #B3B3B3 10px 10px 10px;
   box-shadow: #B3B3B3 10px 10px 10px;
@@ -61,7 +62,7 @@ p:hover {
   padding-top: 20px;
   padding-left: 0px;
   padding-right: 0px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   border-color: #cccccc;
   margin-bottom: 2rem;
 }
