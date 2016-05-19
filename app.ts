@@ -23,7 +23,7 @@ class Project {
 
 	<div *ngFor="let project of projects" class="container">
 		<div class="row">
-			<div class="col-sm-5 col-sm-offset-1 card">
+			<div class="col-sm-4 col-sm-offset-1 card">
 			  <img src="http://placehold.it/350x150" class="card-img-top img-fluid img-rounded center-block" data-src="..." alt="Card image cap">
 				  <div class="card-block  text-xs-center">
 					<h4 class="card-title">Project Name: {{project.title}} </h4>
@@ -31,8 +31,8 @@ class Project {
 					<a href="{{project.link}}" class="btn btn-primary">See live site</a>
 				  </div>
 			</div>
-			<div class="col-sm-6">
-				<h1>Technology used</h1>
+			<div class="col-sm-6 text-xs-center">
+				<h2 >Technology used</h2>
 				<p>{{project.technologies}}</p>
 			</div>
 		</div>
