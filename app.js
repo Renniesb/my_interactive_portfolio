@@ -23,7 +23,7 @@ System.register(['angular2/platform/browser', 'angular2/core'], function(exports
         execute: function() {
             Project = (function () {
                 function Project(title, link, technologies, votes) {
-                    this.name = name;
+                    this.title = title;
                     this.link = link;
                     this.technologies = technologies;
                     this.votes = votes || 0;
@@ -32,78 +32,11 @@ System.register(['angular2/platform/browser', 'angular2/core'], function(exports
             }());
             ProjectApp = (function () {
                 function ProjectApp() {
-                    this.technologyList = [
-                        {
-                            name: "Javascript",
-                            checked: true
-                        }, {
-                            name: "PHP",
-                            checked: true
-                        },
-                        {
-                            name: "HTML5",
-                            checked: true
-                        },
-                        {
-                            name: "CSS3",
-                            checked: true
-                        },
-                        {
-                            name: "Bootstrap",
-                            checked: true
-                        },
-                        {
-                            name: "Wordpress",
-                            checked: true
-                        },
-                        {
-                            name: "AngularJS",
-                            checked: true
-                        },
-                        {
-                            name: "BackboneJS",
-                            checked: true
-                        },
-                        {
-                            name: "KnockoutJS",
-                            checked: true
-                        },
-                        {
-                            name: "Photoshop",
-                            checked: true
-                        }
-                    ];
-                    /*projects that match the selected tech*/
-                    this.matchedProjects = [];
-                    this.selectedTechnology = [];
-                    this.updateSelectedList();
                     this.projects = [
                         new Project('My Freelance website', 'www.renniewebcreations.com', ['PHP', 'Wordpress', 'Bootstrap', 'HTML5', 'CSS3']),
                         new Project('Vocab Trainer Application', 'http://renniesb.github.io/vocab_list/index.html#/', ['Angularjs', 'Javascript', 'Bootstrap', 'HTML5', 'CSS3'])
                     ];
                 }
-                ProjectApp.prototype.onInteractionEvent = function (event) {
-                    var item = this.technologyList.find(function (val) { return val.name === event.target.value; });
-                    item.checked = !item.checked;
-                    this.updateSelectedList();
-                };
-                ProjectApp.prototype.updateSelectedList = function () {
-                    var _this = this;
-                    var checkedNames = this.technologyList.filter(function (val) { return val.checked === true; })
-                        .map(function (n) { return n.name; });
-                    this.matchedProjects = this.projects.filter(function (project) {
-                        return _this.containsAny(project.technologies, checkedNames);
-                    });
-                };
-                ProjectApp.prototype.containsAny = function (arr1, arr2) {
-                    for (var i in arr1) {
-                        if (arr2.indexOf(arr1[i]) > -1) {
-                            return true;
-                        }
-                    }
-                    return false;
-                };
-                ;
                 ProjectApp = __decorate([
                     core_1.Component({
                         selector: 'projects',
